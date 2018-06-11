@@ -1,0 +1,23 @@
+* {
+    color: white;
+    margin: 20px;
+}
+body {
+    background-image: url("../images/Megadeth2016.jpg")
+}
+#text {
+    margin: 0 auto;
+    margin: 60px 40px 0 40px;
+    background-color: black;
+}
+button {
+    color: black;
+}
+#results {
+    margin: 0 auto;
+    margin: 60px 40px 0 40px;
+    background-color: black;
+}
+#results p {
+    margin: 20px;
+}

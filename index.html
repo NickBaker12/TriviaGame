@@ -3,12 +3,58 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Megadeth Trivia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    
+    <div id="text">
+        <h1>Megadeth Trivia</h1>
+        <p>Time remaining: <span id="timer"></span></p>
+        <form id="quiz" name="quiz">
+            <p>1. What is the name of the second album?</p>
+            <input type="radio" name="second" class="wrong">Countdown to Extinction<br>
+            <input type="radio" name="second" class="wrong">Endgame<BR>
+            <input type="radio" name="second" class="wrong">Risk<BR>
+            <input type="radio" name="second" var="correct" class="correct">Peace Sells... But Who's Buying?<BR><br>
+            <p>2. Is Megadeth better than Metallica?</p>
+            <input type="radio" name="better" class="correct">Yes<BR><br>
+            <p>3. What lead guitarist has played for Megadeth?</p>
+            <input type="radio" name="lead" class="wrong">Kirk Hammett<BR>
+            <input type="radio" name="lead" class="correct">Marty Friedman<BR>
+            <input type="radio" name="lead" class="wrong">Slash<BR>
+            <input type="radio" name="lead" class="wrong">Prince<BR><br>
+            <p>4. Which one of these is a Megadeth song?</p>
+            <input type="radio" name="song" class="wrong">Enter Sandman<BR>
+            <input type="radio" name="song" class="wrong">We are Tomorrow's Kings<br>
+            <input type="radio" name="song" class="wrong">The Trooper<br>
+            <input type="radio" name="song" class="correct">Post-American World<br><br>
+            <p>5. What instrument does Dave Mustaine play?"</p>
+            <input type="radio" name="dave" class="wrong">Bagpipe<br>
+            <input type="radio" name="dave" class="wrong">Kalimba<br>
+            <input type="radio" name="dave" class="wrong">Flute<br>
+            <input type="radio" name="dave" class="correct">Flying V Guitar<br><br>
+            <p>6. What genre of music does Megadeth play?</p>
+            <input type="radio" name="thrash" class="correct">Thrash<br>
+            <input type="radio" name="thrash" class="wrong">EDM<br>
+            <input type="radio" name="thrash" class="wrong">Disco<br>
+            <input type="radio" name="thrash" class="wrong">Easy Listening<br><br>
+            <p>7. What is Megadeth's most popular song on Spotify?</p>
+            <input type="radio" name="spotify" class="correct">Holy Wars... The Punishment Due<br>
+            <input type="radio" name="spotify" class="wrong">Tornado of Souls<br>
+            <input type="radio" name="spotify" class="wrong">Dystopia<br>
+            <input type="radio" name="spotify" class="wrong">Trust<br><br>
+            <button onclick="results()">Done</button>
+        </form>
+    </div>
+    <div hidden id="results">
+        <h1>Results</h1>
+        <h2>All Done!</h2>
+        <p>Correct Answers: <span id="rescorrect"></span></p> 
+        <p>Incorrect Answers: <span id="resincorrect"></span></p>
+        <p>Unanswered: <span id="resunanswered"></span></p>
+    </div>
+    <script src="assets/javascript/app.js"></script>
 </body>
 </html>
